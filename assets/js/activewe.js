@@ -1,11 +1,26 @@
 feye9 = document.getElementById("fy9")
 const fors = document.getElementById("forsa")
+var data= {
+    "offre" : {
+        "logo" : "machine1",
+        "name" : "غسالة Indesit 7KG ",
+        "description" : "فرصة مثالية، أفضل آلة موصى بها للاستخدام الفعّال",
+        "price": "450"
+    },
 
-var myData = {}
-    fetch('/assets/js/objets.json')
-    .then(response => response.json())
-    .then(data => {
-         myData = data.repair
+    "products" : [
+        ["assets/img/machine2", "LG 5KG" , "359"],
+        ["assets/img/machine1" , "Whirpool 6KG" ,"359"],
+        ["assets/img/machine1", "Indesit 7KG", "450"]
+    ],
+
+    "repair": [
+        
+        ["assets/img/repair4", "غسالة مؤن Arcelik" , "329"]
+        
+    ]
+}
+       var  myData = data.repair
         // Do something with the JSON data
         if(myData.length > 0){
             for( var r of myData){
@@ -59,12 +74,7 @@ var myData = {}
             else{
                 fors.innerHTML = "<p>No data is put on ? <\p>"
             }
-        
     
-    })
-    .catch(error => {
-        console.error('Error:', error);
-    });
 
 
 

@@ -3,6 +3,8 @@ const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close'),
       logo = document.querySelector('.nav__logo-icon img')
+
+
       
 document.getElementById('nsalah').addEventListener('click', function() {
 document.getElementById('formCard').style.display = 'block';
