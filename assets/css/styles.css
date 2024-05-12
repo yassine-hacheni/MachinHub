@@ -1268,6 +1268,7 @@ body.dark-theme {
   border-radius: 8px;
   z-index: 999;
   text-align: center; /* Center align contents */
+  width: 100%
 }
 
 .image-card button {

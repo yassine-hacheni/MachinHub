@@ -85,6 +85,46 @@ var data= {
         selling.addEventListener("click", ()=>{
             alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
         })
+
+        window.onload = () => {
+            // Check if imagesList is not empty
+            if (imagesList.length > 0) {
+                // Create a card to show the list of images
+                const card = document.createElement("div");
+                card.classList.add("image-card");
+        
+                // Create a container for the scrollable images
+                const imageContainer = document.createElement("div");
+                imageContainer.classList.add("image-container");
+        
+                // Add each image to the container
+                imagesList.forEach(function(imageUrl) {
+                    const image = document.createElement("img");
+                    image.src = imageUrl;
+                    image.style.height = "500px"; // Corrected style assignment
+                    imageContainer.appendChild(image);
+                });
+        
+                // Append the container to the card
+                card.appendChild(imageContainer);
+        
+                // Append the card to the body
+                document.body.appendChild(card);
+        
+                // Add a close button to the card
+                const closeButton = document.createElement("button");
+                closeButton.textContent = "غلق";
+                closeButton.addEventListener("click", function() {
+                    document.body.removeChild(card);
+                });
+                card.appendChild(closeButton);
+            } else {
+                console.error("No images available to display.");
+            }
+        };
+        
+
+
     if (seenButton) {
         seenButton.addEventListener("click", function(event) {
             event.preventDefault(); // Prevent default behavior of anchor tag
