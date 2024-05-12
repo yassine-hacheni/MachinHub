@@ -25,7 +25,7 @@ var data= {
         if(myData.length > 0){
             for( var r of myData){
                 feye9.innerHTML += "<article class=\"new__card swiper-slide\">"
-                    +"<span class=\"new__tag\">كلمني</span>"
+                    +"<span class=\"new__tag\">للبيع</span>"
 
                     +"<img src=\""+ r[0] +".png \"  class=\"new__img\"/>"
 
