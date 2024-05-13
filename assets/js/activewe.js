@@ -3,13 +3,13 @@ const fors = document.getElementById("forsa")
 var data= {
     "offre" : {
         "logo" : "machine1",
-        "name" : "غسالة Indesit 7KG ",
+        "name" : "غسالة Indesit 5KG ",
         "description" : "فرصة مثالية، أفضل آلة موصى بها للاستخدام الفعّال",
         "price": "450"
     },
 
     "products" : [
-        ["assets/img/machine2", "LG 5KG" , "359"],
+        ["assets/img/machine2", "LG 7KG" , "359"],
         ["assets/img/machine3" , "Whirpool 6KG" ,"359"],
         ["assets/img/machine1", "Indesit 7KG", "450"]
     ],
@@ -81,89 +81,17 @@ var data= {
     document.addEventListener("DOMContentLoaded", function() {
         const seenButton = document.getElementById("seenButton");
         const selling = document.querySelector(".nechrik")
-        const imagesList = ["/assets/img/gauche1.png", "/assets/img/face1.png", "/assets/img/droite1.png", "/assets/img/back1.png"]; // List of image URLs
         selling.addEventListener("click", ()=>{
             alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
         })
-
-        window.onload = () => {
-            // Check if imagesList is not empty
-            if (imagesList.length > 0) {
-                // Create a card to show the list of images
-                const card = document.createElement("div");
-                card.classList.add("image-card");
-        
-                // Create a container for the scrollable images
-                const imageContainer = document.createElement("div");
-                imageContainer.classList.add("image-container");
-        
-                // Add each image to the container
-                imagesList.forEach(function(imageUrl) {
-                    const image = document.createElement("img");
-                    image.src = imageUrl;
-                    image.style.height = "500px"; // Corrected style assignment
-                    imageContainer.appendChild(image);
-                });
-        
-                // Append the container to the card
-                card.appendChild(imageContainer);
-        
-                // Append the card to the body
-                document.body.appendChild(card);
-        
-                // Add a close button to the card
-                const closeButton = document.createElement("button");
-                closeButton.textContent = "غلق";
-                closeButton.addEventListener("click", function() {
-                    document.body.removeChild(card);
-                });
-                card.appendChild(closeButton);
-            } else {
-                console.error("No images available to display.");
-            }
-        };
         
 
 
     if (seenButton) {
         seenButton.addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent default behavior of anchor tag
-            
-            // Check if imagesList is not empty
-            if (imagesList.length > 0) {
-                // Create a card to show the list of images
-                const card = document.createElement("div");
-                card.classList.add("image-card");
+            window.location.href = "https://www.facebook.com/marketplace/item/410167021973312";
+        })
 
-                // Create a container for the scrollable images
-                const imageContainer = document.createElement("div");
-                imageContainer.classList.add("image-container");
-
-                // Add each image to the container
-                imagesList.forEach(function(imageUrl) {
-                    const image = document.createElement("img");
-                    image.src = imageUrl;
-                    image.style ="height : 500px"
-                    imageContainer.appendChild(image);
-                });
-
-                // Append the container to the card
-                card.appendChild(imageContainer);
-
-                // Append the card to the body
-                document.body.appendChild(card);
-
-                // Add a close button to the card
-                const closeButton = document.createElement("button");
-                closeButton.textContent = "غلق";
-                closeButton.addEventListener("click", function() {
-                    document.body.removeChild(card);
-                });
-                card.appendChild(closeButton);
-            } else {
-                console.error("No images available to display.");
-            }
-        });
     } else {
         console.error("Button with id 'seenButton' not found.");
     }
