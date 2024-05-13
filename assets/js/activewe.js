@@ -81,7 +81,7 @@ var data= {
     document.addEventListener("DOMContentLoaded", function() {
         const seenButton = document.getElementById("seenButton");
         const selling = document.querySelector(".nechrik")
-        const imagesList = ["/assets/img/gauche1.jpeg", "/assets/img/face1.jpeg", "/assets/img/droite1.jpeg", "/assets/img/back1.jpeg"]; // List of image URLs
+        const imagesList = ["/assets/img/gauche1.png", "/assets/img/face1.png", "/assets/img/droite1.png", "/assets/img/back1.png"]; // List of image URLs
         selling.addEventListener("click", ()=>{
             alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
         })
