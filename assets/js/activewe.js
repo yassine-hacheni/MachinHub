@@ -10,8 +10,8 @@ var data= {
 
     "products" : [
         ["assets/img/machine2", "LG 7KG" , "359"],
-        ["assets/img/machine3" , "Whirpool 6KG" ,"359"],
-        ["assets/img/machine1", "Indesit 7KG", "450"]
+        ["assets/img/machine3" , "Whirpool 6KG" ,"300"],
+        ["assets/img/machine1", "Indesit 5KG", "450"]
     ],
 
     "repair": [
