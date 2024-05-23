@@ -83,18 +83,74 @@ var data= {
         const selling = document.querySelector(".nechrik")
         selling.addEventListener("click", ()=>{
             alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
-        })
+        })})
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const seenButton = document.getElementById("seenButton");
+            const selling = document.querySelector(".nechrik")
+            const imagesList = ["/assets/img/gauche1.png", "/assets/img/face1.png", "/assets/img/droite1.png", "/assets/img/back1.png"]; // List of image URLs
+            selling.addEventListener("click", ()=>{
+                alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
+            })
+    
+    
+            
+    
+    
+            if (seenButton) {
+                seenButton.addEventListener("click", function(event) {
+                    event.preventDefault(); // Prevent default behavior of anchor tag
+                    
+                    // Check if imagesList is not empty
+                    if (imagesList.length > 0) {
+                        // Create a card to show the list of images
+                        const card = document.createElement("div");
+                        card.classList.add("image-card");
         
-
-
-    if (seenButton) {
-        seenButton.addEventListener("click", function(event) {
-            window.location.href = "https://www.facebook.com/marketplace/item/410167021973312";
+                        // Create a container for the scrollable images
+                        const imageContainer = document.createElement("div");
+                        imageContainer.classList.add("image-container");
+        
+                        // Add each image to the container
+                        imagesList.forEach(function(imageUrl) {
+                            const image = document.createElement("img");
+                            image.src = imageUrl;
+                            image.style ="height : 500px"
+                            imageContainer.appendChild(image);
+                        });
+        
+                        // Append the container to the card
+                        card.appendChild(imageContainer);
+        
+                        // Append the card to the body
+                        document.body.appendChild(card);
+        
+                        // Add a close button to the card
+                        const closeButton = document.createElement("button");
+                        closeButton.textContent = "غلق";
+                        closeButton.addEventListener("click", function() {
+                            document.body.removeChild(card);
+                        });
+                        card.appendChild(closeButton);
+                    } else {
+                        console.error("No images available to display.");
+                    }
+                });
+            } else {
+                console.error("Button with id 'seenButton' not found.");
+            }
         })
+            
 
-    } else {
-        console.error("Button with id 'seenButton' not found.");
-    }
-});
+
+//     if (seenButton) {
+//         seenButton.addEventListener("click", function(event) {
+//             window.location.href = "https://www.facebook.com/marketplace/item/410167021973312";
+//         })
+
+//     } else {
+//         console.error("Button with id 'seenButton' not found.");
+//     }
+// });
 
             
