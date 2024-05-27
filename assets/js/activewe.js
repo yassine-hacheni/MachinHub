@@ -88,7 +88,7 @@ var data= {
         document.addEventListener("DOMContentLoaded", function() {
             const seenButton = document.getElementById("seenButton");
             const selling = document.querySelector(".nechrik")
-            const imagesList = ["/assets/img/gauche1.png", "/assets/img/face1.png", "/assets/img/droite1.png", "/assets/img/back1.png"]; // List of image URLs
+            const imagesList = ["https://scontent.ftun4-2.fna.fbcdn.net/v/t45.5328-4/436749463_260118287127336_1771927376024930542_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=247b10&_nc_ohc=sYsVTDM2k8AQ7kNvgHsr3Or&_nc_ht=scontent.ftun4-2.fna&oh=00_AYCOc1elBuRR6tCgI2dfh7qrizJYXx5J6KBG0M3Yotzplg&oe=665A68E6", "https://scontent.ftun4-2.fna.fbcdn.net/v/t45.5328-4/438079985_7520212884735851_1183285963685205660_n.jpg?stp=dst-jpg_s960x960&_nc_cat=105&ccb=1-7&_nc_sid=247b10&_nc_ohc=UZNs8fobkYoQ7kNvgFdFOsy&_nc_ht=scontent.ftun4-2.fna&oh=00_AYBxLlmeeB5kH84F8t7Co6A1KKGQw27e6VKgFfNjF0YgtA&oe=665A6970", "https://scontent.ftun4-2.fna.fbcdn.net/v/t45.5328-4/436749501_1761423547720162_1822584015440621562_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=247b10&_nc_ohc=Q0KoAUnnSfQQ7kNvgFdMRW0&_nc_ht=scontent.ftun4-2.fna&oh=00_AYCTV-m2NJpLYbsFpN3JePbG6pV3ZUoo6GVAeX2sv4Hw3Q&oe=665A5592", "https://scontent.ftun4-2.fna.fbcdn.net/v/t45.5328-4/436520485_1381076452577327_7961386766419743575_n.jpg?stp=dst-jpg_s960x960&_nc_cat=111&ccb=1-7&_nc_sid=247b10&_nc_ohc=iqCCZAHeoXgQ7kNvgG8mZdm&_nc_ht=scontent.ftun4-2.fna&oh=00_AYBTa_cdbTpXcWqdiefS_osAonHldadQPujE9qX-qyRtYg&oe=665A62F1"]; // List of image URLs
             selling.addEventListener("click", ()=>{
                 alert("Contactez-nous sur les reseau sociaux \n ou \n contactez le numero 27 755 235")
             })
